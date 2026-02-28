@@ -1,0 +1,37 @@
+# Web framework
+fastapi
+uvicorn[standard]
+
+# Serialization / Validation
+pydantic
+
+# Redis (async) - used if you want Redis as cache/result-backend
+redis>=4.2
+
+# RabbitMQ (async client you listed)
+aio-pika
+
+# Celery worker (uses RabbitMQ broker in your compose)
+celery
+
+# HTTP Clients
+httpx
+aiohttp
+
+# HTML Parsing
+beautifulsoup4
+
+# Elasticsearch 8 (Async client)
+elasticsearch[async]>=8.6.0,<9.0.0
+
+# Environment Variables
+python-dotenv
+
+# PostgreSQL (Supabase)
+psycopg2-binary
+
+# Optional: helpful retry library (used only if you prefer tenacity patterns)
+tenacity
+
+# Optional: for robust JSON logging in containers
+python-json-logger
